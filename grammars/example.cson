@@ -1,0 +1,4 @@
+scopeName: 'source.example'
+name: 'Example'
+fileTypes: [ 'exp' ]
+limitLineLength: false

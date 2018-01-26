@@ -1,0 +1,12 @@
+Normal text # comment
+
+* bold # text *
+
+\section{
+  text
+  # comment
+  * bo-#-ld *
+  text
+}
+
+text
