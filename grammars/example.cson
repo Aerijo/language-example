@@ -28,5 +28,11 @@ patterns: [
     end: '\\}'
     endCaptures:
       0: 'punctuation.definition.end.example'
+    patterns: [
+      {
+        name: 'comment.line.example'
+        match: '#.*$'
+      }
+    ]
   }
 ]
