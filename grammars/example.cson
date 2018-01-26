@@ -17,4 +17,16 @@ patterns: [
       2: name: 'markup.bold.example'
       3: name: 'punctuation.definition.bold.example'
   }
+  {
+    name: 'meta.section.example'
+    contentName: 'markup.other.section.example'
+    begin: '((\\\\)section)(\\{)'
+    beginCaptures:
+      1: name: 'support.function.section.example'
+      2: name: 'punctuation.definition.function.example'
+      3: name: 'punctuation.definition.begin.example'
+    end: '\\}'
+    endCaptures:
+      0: 'punctuation.definition.end.example'
+  }
 ]
