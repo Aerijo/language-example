@@ -10,12 +10,19 @@ patterns: [
     match: '#.*$'
   }
   {
-    match: '(\\*)(.*?)(\\*)'
-    captures:
-      0: name: 'meta.bold.example'
-      1: name: 'punctuation.definition.bold.example'
-      2: name: 'markup.bold.example'
-      3: name: 'punctuation.definition.bold.example'
+    name: 'meta.bold.example'
+    contentName: 'markup.bold.example'
+    begin: '\\*'
+    beginCaptures:
+      0: name: 'punctuation.definition.bold.example'
+    end: '\\*'
+    endCaptures:
+      0: name: 'punctuation.definition.bold.example'
+    patterns: [
+      {
+        include: '$self'
+      }
+    ]
   }
   {
     name: 'meta.section.example'
